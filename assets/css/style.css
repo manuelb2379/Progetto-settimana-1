@@ -376,3 +376,17 @@ label {
 .scritta {
   margin-top: 0;
 }
+
+/* grazie.html*/
+.thanks {
+  text-align: center;
+  color: hsl(220, 60%, 25%);
+}
+.thank-you a {
+  color: hsl(220, 60%, 30%);
+  text-decoration: underline hsl(45, 90%, 50%);
+}
+
+.thank-you {
+  min-height: 70vh;
+}
