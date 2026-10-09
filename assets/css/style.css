@@ -86,7 +86,7 @@ nav ul li {
   display: inline;
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
-  padding: 15px 25px;
+  padding: 10px 15px;
   line-height: 1.2;
 }
 
@@ -178,21 +178,133 @@ section h2 {
   background-color: #F9F5EA;
 }
 
-#table td {
+.table td {
   width: 50%;
   padding: 12px;
-  border-bottom: 10px solid red;
+  border-bottom: 1px solid #ece6d8;
 }
 
-#table-com th{
-  border: 1px solid #ece6d8;
-}
 
 
 #e-tab th{
   color: hsl(220, 60%, 25%);
     border-bottom: 1px solid #ece6d8;
   background-color: #ece6d8 ;
-  border-radius: 5px;
 }
 
+#e-tab td, #e-tab th{
+  width: 33.33%;
+}
+/* card progetti*/
+.project:nth-of-type(odd) {
+  border-left: 5px solid hsl(220, 60%, 30%);
+  background-color: #f9f5ea;
+  border-radius: 2%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+
+.project:nth-of-type(even) {
+  border-left: 5px solid hsl(45, 90%, 50%);
+  background-color: #f9f5ea;
+  border-radius: 2%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+.project h3 {
+  margin: 0 0 6px 0;
+ color: #2D3953;
+}
+
+.project p{
+  margin: 0;
+}
+
+.project a {
+  color: hsl(220, 60%, 30%);
+  text-decoration: none;
+}
+
+.project:hover a {
+  color: hsl(220, 60%, 30%) ;
+  text-decoration: underline hsl(45, 90%, 50%);
+}
+
+.dettagli{
+  text-align: right;
+}
+
+.dettagli a{
+  color: hsl(220, 60%, 30%);
+  text-decoration: underline hsl(45, 90%, 50%);
+}
+
+/*form*/
+
+input, textarea, select{
+  width: 100%;
+  background-color: #fbf8f1 ;
+  border-radius: 2px;
+  border: 1px solid #d6cfbf;
+}
+input:focus, textarea:focus, select:focus {
+  background-color: white;
+  border: hsl(220, 60%, 30%);
+  
+}
+label {
+  font-weight: bold;
+  color: hsl(220, 60%, 30%);
+}
+.box {
+  width: auto;
+}
+ /*button invio*/
+.send {
+  color: white;
+  background-color: hsl(220, 60%, 30%);
+  font-weight: bold;
+  width: 18%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.send:hover {
+  background-color: sfondo hsl(220, 60%, 45%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+/* footer */
+#site-footer {
+  background-color: hsl(220, 40%, 15%);
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 40px;
+}
+
+.icon-foot ul{
+ 
+  display: inline-block;
+  font-size: 2rem;
+  padding: 15px;
+  margin: 20px;
+}
+
+.icon-foot {
+   list-style: none;
+   background-color: rgba(255, 255, 255, 0.08);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+   display: inline;
+}
+.icon-foot:hover{
+    background-color: hsl(220, 60%, 45%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.scritta{
+  margin-top: 0;
+}
