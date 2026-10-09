@@ -45,22 +45,25 @@ header {
 }
 
 #site-header {
-  background-image: url(../img/header-bg.jpg);
+  background-image:
+    linear-gradient(to bottom, rgba(24, 38, 77, 0.75), rgba(15, 23, 49, 0.85)),
+    url(../img/header-bg.jpg);
+  background-color: rgba(0, 0, 0, 0.06);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   text-align: center;
-  padding: 60px 20px 0px 20px;
-  max-height: 300px;
+  padding: 60px 20px 30px 20px;
   border-bottom: 4px solid hsl(45, 90%, 60%);
 }
 
 /*largezza main*/
 main {
   max-width: 920px;
-  margin: 0 auto;
+  margin: -30px auto 0;
+  position: relative;
   padding: 0px 40px 60px 40px;
 }
 
@@ -109,8 +112,14 @@ nav ul li:hover a {
 }
 /*sottotilo header*/
 .tagline {
+  margin: 50px auto;
   color: #f0e7c8;
   font-style: italic;
+}
+
+/*h1*/
+#start {
+  font-size: 60px;
 }
 /*elemento prima ogni di h2*/
 section h2::before {
@@ -119,6 +128,7 @@ section h2::before {
 }
 
 /*section*/
+
 section {
   border: 1px solid #e6e0d3;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
@@ -152,18 +162,18 @@ section h2 {
   line-height: 0.5;
 }
 
-/*competenze e tabella*/
+/*tabella competenze*/
 .comp-title {
   color: hsl(220, 30%, 40%);
   font-style: italic;
 }
 
-#f-line{
+#f-line {
   text-align: center;
-  vertical-align:baseline;
+  vertical-align: baseline;
 }
 
-.comp-tab{
+.comp-tab {
   color: hsl(220, 60%, 30%);
   text-align: start;
 }
@@ -175,7 +185,7 @@ section h2 {
 #table-com th {
   width: 50%;
   border-bottom: 1px solid #ece6d8;
-  background-color: #F9F5EA;
+  background-color: #f9f5ea;
 }
 
 .table td {
@@ -183,19 +193,52 @@ section h2 {
   padding: 12px;
   border-bottom: 1px solid #ece6d8;
 }
-
-
-
-#e-tab th{
-  color: hsl(220, 60%, 25%);
-    border-bottom: 1px solid #ece6d8;
-  background-color: #ece6d8 ;
+/*tabella esperienze*/
+#cap-e{
+  color: hsl(220, 30%, 40%);
+  font-style: italic;
+  
 }
 
-#e-tab td, #e-tab th{
+#e-tab th {
+  color: hsl(220, 60%, 25%);
+  border-bottom: 1px solid #ece6d8;
+  background-color: #ece6d8;
+}
+
+#e-tab td,
+#e-tab th {
   width: 33.33%;
 }
-/* card progetti*/
+/*barre della tabella competenze*/
+.bar {
+  background-color: #ece6d8;
+  border-radius: 6px;
+  height: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bar-fill {
+  background-color: hsl(45, 90%, 50%);
+  height: 100%;
+  border-radius: 6px;
+}
+/*sistemazione celle di sx tabella competenze*/
+.blue {
+  margin-right: 12px;
+  color: #213e7b;
+}
+
+.descr {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #7e7868;
+  font-size: 0.9em;
+}
+
+/* card progetti e link*/
 .project:nth-of-type(odd) {
   border-left: 5px solid hsl(220, 60%, 30%);
   background-color: #f9f5ea;
@@ -205,18 +248,20 @@ section h2 {
 }
 
 .project:nth-of-type(even) {
+  border: 1.5px solid #f9f5ea;
   border-left: 5px solid hsl(45, 90%, 50%);
-  background-color: #f9f5ea;
+  background-color: white;
   border-radius: 2%;
   padding: 12px 20px;
   margin-bottom: 20px;
 }
+
 .project h3 {
   margin: 0 0 6px 0;
- color: #2D3953;
+  color: #2d3953;
 }
 
-.project p{
+.project p {
   margin: 0;
 }
 
@@ -226,32 +271,46 @@ section h2 {
 }
 
 .project:hover a {
-  color: hsl(220, 60%, 30%) ;
-  text-decoration: underline hsl(45, 90%, 50%);
-}
-
-.dettagli{
-  text-align: right;
-}
-
-.dettagli a{
   color: hsl(220, 60%, 30%);
   text-decoration: underline hsl(45, 90%, 50%);
 }
 
+.dettagli {
+  text-align: right;
+}
+
+.dettagli a {
+  color: hsl(220, 60%, 30%);
+  text-decoration: underline hsl(45, 90%, 50%);
+}
+/*new del primo progetto*/
+.new{
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 3px;
+  margin-left: 10px;
+  font-family: "Inter", Arial, sans-serif;;
+}
 /*form*/
 
-input, textarea, select{
+input,
+textarea,
+select {
   width: 100%;
-  background-color: #fbf8f1 ;
+  background-color: #fbf8f1;
   border-radius: 2px;
   border: 1px solid #d6cfbf;
 }
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   background-color: white;
   border: hsl(220, 60%, 30%);
-  
 }
+
 label {
   font-weight: bold;
   color: hsl(220, 60%, 30%);
@@ -259,7 +318,7 @@ label {
 .box {
   width: auto;
 }
- /*button invio*/
+/*button invio*/
 .send {
   color: white;
   background-color: hsl(220, 60%, 30%);
@@ -284,27 +343,36 @@ label {
   padding: 40px;
 }
 
-.icon-foot ul{
- 
-  display: inline-block;
-  font-size: 2rem;
-  padding: 15px;
-  margin: 20px;
+.icon-foot {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: center;
 }
 
-.icon-foot {
-   list-style: none;
-   background-color: rgba(255, 255, 255, 0.08);
+.icon-foot li {
+  background-color: rgba(255, 255, 255, 0.08);
   width: 50px;
   height: 50px;
   border-radius: 50%;
-   display: inline;
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  line-height: 2.1;
 }
-.icon-foot:hover{
-    background-color: hsl(220, 60%, 45%);
+
+.icon-foot li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.icon-foot li:hover {
+  background-color: hsl(220, 60%, 45%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
-.scritta{
+.scritta {
   margin-top: 0;
 }

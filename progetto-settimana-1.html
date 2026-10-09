@@ -81,48 +81,69 @@
                 <tbody>
                     <tr>
 
-                        <td><i class="fab fa-css3-alt"></i>HTML5<br>
-                            Tag strutturali, attributi, accessibilità di base, form con validazione</td>
-                        <td><progress width="100%" value="80" max="100"></progress>
+                        <td><i class="fab fa-html5 blue"></i><b>HTML5 semantico</b>
+                            <span class="descr">Tag strutturali, attributi, accessibilità di base, form con validazione
+                            </span>
+                        </td>
+                        <td>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 80%"></div>
+                            </div>
                         </td>
                     </tr>
 
                     <tr>
 
-                        <td><i class="fab fa-html5"></i>CSS3<br>
-                            Selettori, pseudo-classi, box model, float, pseudo-elementi, Google Fonts<br>
-                            Tag strutturali, attributi, accessibilità di base, form con validazione</td>
-                        <td><progress width="100%" value="80" max="100"></progress>
+                        <td><i class="fab fa-css3-alt blue"></i><b>CSS3</b>
+                            <span class="descr"> Selettori, pseudo-classi, box model, float, pseudo-elementi, Google
+                                Fonts</span>
+                        </td>
+                        <td>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 70%"></div>
+                            </div>
                         </td>
                     </tr>
                     <tr>
 
-                        <td><i class="fab fa-git-alt"></i>Git e GitHub <br>
-                            init,add,commit, push, repository remoti, pubblicazione su Github Pages </td>
-                        <td><progress width="100%" value="60" max="100"></td>
+                        <td><i class="fab fa-git-alt blue"></i><b>Git e GitHub</b>
+                            <span class="descr">init,add,commit, push, repository remoti, pubblicazione su Github
+                                Pages</span>
+                        </td>
+                        <td>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 60%"></div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
 
-                        <td><i class="fas fa-terminal"></i>Linea di comando<br>
-                            Navigazione tra cartelle, gesione file, comandi base di shelle su macOS e Linux</td>
-                        <td><progress width="100%" value="50" max="100"></td>
+                        <td><i class="fas fa-terminal blue"></i><b>Linea di comando</b>
+                            <span class="descr">Navigazione tra cartelle, gesione file, comandi base di shelle su macOS
+                                e Linux</span>
+                        </td>
+                        <td>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 50%"></div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
 
-                        <td><i class="fab fa-markdown"></i>Markdown e documentazione<br>
-                            README, documentazione tecnica, scrittura chiara per altri sviluppatori</td>
+                        <td><i class="fab fa-markdown blue"></i><b>Markdown e documentazione</b>
+                            <span class="descr">README, documentazione tecnica, scrittura chiara per altri
+                                sviluppatori</span>
+                        </td>
 
-                        <td><progress width="100%" value="70" max="100"></td>
+                        <td>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 70%"></div>
+                            </div>
+                        </td>
                     </tr>
 
                 </tbody>
             </table>
-            <ul class="skill-list">
-                <li>HTML - struttura delle pagine</li>
-                <li>CSS - stile e impaginazione</li>
-                <li>Git e GitHub - versionamento del codice</li>
-                <li>Visual Studio Code - editor di lavoro</li>
-            </ul>
         </section>
 
         <div>
@@ -134,7 +155,7 @@
             <h2>Esperienze</h2>
             <p>Un breve riepilogo del mio percorso formativo e lavorativo recente.</p>
             <table class="table" id="e-tab">
-                <caption>Esperienze formative e lavorative</caption>
+                <p id="cap-e">Esperienze formative e lavorative</p>
                 <thead>
                     <tr>
                         <th scope="col" class="comp-tab">Anno</th>
@@ -173,14 +194,14 @@
                     <p>I lavori fatti durante le prime settimane di corso.</p>
                 </div>
                 <article class="project">
-                    <h3>Pagina di presentazione</h3>
+                    <h3>Pagina di presentazione<span class="new">NEW</span></h3>
                     <p>La mia prima pagina di presentazione.
                         <br><br>
                         <a href="https://github.com/manuelb2379/Epicode-S1-Portfolio" target="_blank"><i
                                 class="fa-brands fa-github"></i>Vedi su GitHub</a>
                     </p>
                 </article>
-                <article class="project">
+                <article class="project" id="second">
                     <h3>I paesaggi della toscana</h3>
                     <p>Ecco 6 posti della toscana da non perdersi assolutamente.
                         <br><br><a href="https://github.com/manuelb2379/Epicode-challenge-3" target="_blank"><i
@@ -201,10 +222,11 @@
 
             </article>
 
-            <div>
-                <p><a href="#start">Torna alla selezione pincipale</a></p>
-            </div>
         </section>
+        <div>
+            <p><a href="#start">Torna alla selezione pincipale</a></p>
+        </div>
+
 
         <!--Contattami-->
         <section id="contatti">
@@ -253,29 +275,29 @@
                     <br />
                     <button class="send" type="submit"><i class="fas fa-paper-plane"></i> Invia</button>
                 </form>
-                <div>
-                    <p><a href="#start">Torna alla selezione pincipale</a></p>
-                </div>
+
             </aside>
         </section>
-
+        <div>
+            <p><a href="#start">Torna alla selezione pincipale</a></p>
+        </div>
     </main>
 
     <!--Footer-->
     <footer id="site-footer">
         <ul class="icon-foot">
 
-            <li class="icon-foot"> 
-                <i class="fab fa-github-square"></i>
+            <li>
+                <a href="javascript:void(0)"><i class="fab fa-github-square"></i></a>
             </li>
-            <li class="icon-foot">
-                <i class="fab fa-linkedin"></i>
+            <li>
+                <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
             </li>
-            <li class="icon-foot">
-                <i class="fas fa-envelope"></i>
+            <li>
+                <a href="javascript:void(0)"><i class="fas fa-envelope"></i></a>
             </li>
-            <li class="icon-foot">
-                <i class="fas fa-globe"></i>
+            <li>
+                <a href="javascript:void(0)"><i class="fas fa-globe"></i></a>
             </li>
         </ul>
         <p class="scritta"><br>© 2026 Manuel Burgalassi <span class="material-symbols-outlined"
